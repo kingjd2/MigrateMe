@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +14,93 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="YfG-px-6sL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VehicleCell" rowHeight="261" id="Elk-NA-7z9" customClass="VehicleTableViewCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="261"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Elk-NA-7z9" id="QRr-vB-mkh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="260.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018 Chevrolette Silvarado LTE 3G Edge" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuL-oW-wRv">
+                                                    <rect key="frame" x="15" y="11" width="345" height="48"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$14,899 • 100K Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0B-j8-6U2">
+                                                    <rect key="frame" x="15" y="59" width="345" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power Liftgate/DeckLid, Auto Cruise Control, 4WD/AWD, Leather Seats, Satellite Radio Ready, Rear View Camera" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUe-7r-t1i">
+                                                    <rect key="frame" x="15" y="80" width="345" height="50.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Broad" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hc3-iU-0gA">
+                                                    <rect key="frame" x="15" y="130.5" width="345" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="M0B-j8-6U2" secondAttribute="trailing" id="59s-ca-dcK"/>
+                                                <constraint firstItem="nuL-oW-wRv" firstAttribute="leading" secondItem="QRr-vB-mkh" secondAttribute="leadingMargin" id="Bsm-Ol-kCZ"/>
+                                                <constraint firstItem="M0B-j8-6U2" firstAttribute="top" secondItem="nuL-oW-wRv" secondAttribute="bottom" id="FIC-9j-hkP"/>
+                                                <constraint firstItem="Hc3-iU-0gA" firstAttribute="trailing" secondItem="QRr-vB-mkh" secondAttribute="trailingMargin" id="MfO-nS-3tL"/>
+                                                <constraint firstItem="GUe-7r-t1i" firstAttribute="leading" secondItem="QRr-vB-mkh" secondAttribute="leadingMargin" id="Osr-KQ-Jyp"/>
+                                                <constraint firstItem="nuL-oW-wRv" firstAttribute="top" secondItem="QRr-vB-mkh" secondAttribute="topMargin" id="UW8-aU-MFf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="GUe-7r-t1i" secondAttribute="trailing" id="cdE-mg-F8g"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Hc3-iU-0gA" secondAttribute="bottom" priority="250" id="gzu-XM-UDm"/>
+                                                <constraint firstItem="M0B-j8-6U2" firstAttribute="leading" secondItem="QRr-vB-mkh" secondAttribute="leadingMargin" id="mMm-BV-y6t"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nuL-oW-wRv" secondAttribute="trailing" id="sK1-if-oHf"/>
+                                                <constraint firstItem="GUe-7r-t1i" firstAttribute="top" secondItem="M0B-j8-6U2" secondAttribute="bottom" id="ugg-LI-nTu"/>
+                                                <constraint firstItem="Hc3-iU-0gA" firstAttribute="top" secondItem="GUe-7r-t1i" secondAttribute="bottom" id="xj5-Nz-TDE"/>
+                                                <constraint firstItem="Hc3-iU-0gA" firstAttribute="leading" secondItem="QRr-vB-mkh" secondAttribute="leadingMargin" id="zhw-Nx-Ocf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="nuL-oW-wRv" id="h79-Bg-8Th"/>
+                                            <outlet property="featuresLabel" destination="GUe-7r-t1i" id="2MZ-u7-nxN"/>
+                                            <outlet property="locationLabel" destination="Hc3-iU-0gA" id="PQg-O6-RI8"/>
+                                            <outlet property="priceMilesLabel" destination="M0B-j8-6U2" id="qTc-l8-6WT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="C4B-kC-nCN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Trk-CM-gWC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YfG-px-6sL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0iv-xk-fbm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YfG-px-6sL" secondAttribute="bottom" id="2tq-Wr-3GB"/>
+                            <constraint firstItem="YfG-px-6sL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8nI-mo-agU"/>
+                            <constraint firstItem="YfG-px-6sL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZYH-Du-UGC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="YfG-px-6sL" id="PFZ-ZZ-uCn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,11 @@
 		970A10BE20DD3D4400BA1245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970A10BD20DD3D4400BA1245 /* Assets.xcassets */; };
 		970A10C120DD3D4400BA1245 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970A10BF20DD3D4400BA1245 /* LaunchScreen.storyboard */; };
 		970A10C420DD3D4400BA1245 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 970A10C320DD3D4400BA1245 /* main.m */; };
+		97700D8720DD47E7002738AA /* vehicles.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97700D8620DD47E7002738AA /* vehicles.plist */; };
+		97700D8B20DD4849002738AA /* VehiclesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 97700D8A20DD4849002738AA /* VehiclesService.m */; };
+		97700D8E20DD4901002738AA /* VehiclesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97700D8D20DD4901002738AA /* VehiclesModel.m */; };
+		97700D9120DD490B002738AA /* VehicleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97700D9020DD490B002738AA /* VehicleModel.m */; };
+		97700D9420DD502C002738AA /* VehicleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97700D9320DD502C002738AA /* VehicleTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		970A10C020DD3D4400BA1245 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		970A10C220DD3D4400BA1245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		970A10C320DD3D4400BA1245 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97700D8620DD47E7002738AA /* vehicles.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = vehicles.plist; sourceTree = "<group>"; };
+		97700D8920DD4849002738AA /* VehiclesService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehiclesService.h; sourceTree = "<group>"; };
+		97700D8A20DD4849002738AA /* VehiclesService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehiclesService.m; sourceTree = "<group>"; };
+		97700D8C20DD4901002738AA /* VehiclesModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehiclesModel.h; sourceTree = "<group>"; };
+		97700D8D20DD4901002738AA /* VehiclesModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehiclesModel.m; sourceTree = "<group>"; };
+		97700D8F20DD490B002738AA /* VehicleModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleModel.h; sourceTree = "<group>"; };
+		97700D9020DD490B002738AA /* VehicleModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleModel.m; sourceTree = "<group>"; };
+		97700D9220DD502C002738AA /* VehicleTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleTableViewCell.h; sourceTree = "<group>"; };
+		97700D9320DD502C002738AA /* VehicleTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 		970A10B320DD3D4400BA1245 /* MigrateMe */ = {
 			isa = PBXGroup;
 			children = (
+				97700D8820DD47EE002738AA /* Resources */,
 				970A10B420DD3D4400BA1245 /* AppDelegate.h */,
 				970A10B520DD3D4400BA1245 /* AppDelegate.m */,
 				970A10B720DD3D4400BA1245 /* ViewController.h */,
@@ -67,8 +82,24 @@
 				970A10BF20DD3D4400BA1245 /* LaunchScreen.storyboard */,
 				970A10C220DD3D4400BA1245 /* Info.plist */,
 				970A10C320DD3D4400BA1245 /* main.m */,
+				97700D8920DD4849002738AA /* VehiclesService.h */,
+				97700D8A20DD4849002738AA /* VehiclesService.m */,
+				97700D8C20DD4901002738AA /* VehiclesModel.h */,
+				97700D8D20DD4901002738AA /* VehiclesModel.m */,
+				97700D8F20DD490B002738AA /* VehicleModel.h */,
+				97700D9020DD490B002738AA /* VehicleModel.m */,
+				97700D9220DD502C002738AA /* VehicleTableViewCell.h */,
+				97700D9320DD502C002738AA /* VehicleTableViewCell.m */,
 			);
 			path = MigrateMe;
+			sourceTree = "<group>";
+		};
+		97700D8820DD47EE002738AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97700D8620DD47E7002738AA /* vehicles.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +162,7 @@
 				970A10C120DD3D4400BA1245 /* LaunchScreen.storyboard in Resources */,
 				970A10BE20DD3D4400BA1245 /* Assets.xcassets in Resources */,
 				970A10BC20DD3D4400BA1245 /* Main.storyboard in Resources */,
+				97700D8720DD47E7002738AA /* vehicles.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97700D9420DD502C002738AA /* VehicleTableViewCell.m in Sources */,
+				97700D9120DD490B002738AA /* VehicleModel.m in Sources */,
+				97700D8B20DD4849002738AA /* VehiclesService.m in Sources */,
 				970A10B920DD3D4400BA1245 /* ViewController.m in Sources */,
 				970A10C420DD3D4400BA1245 /* main.m in Sources */,
 				970A10B620DD3D4400BA1245 /* AppDelegate.m in Sources */,
+				97700D8E20DD4901002738AA /* VehiclesModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +320,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FTXMYEW2VC;
+				DEVELOPMENT_TEAM = JAD29E5VKA;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +338,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FTXMYEW2VC;
+				DEVELOPMENT_TEAM = JAD29E5VKA;
 				INFOPLIST_FILE = MigrateMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
